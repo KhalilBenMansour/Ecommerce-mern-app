@@ -51,7 +51,7 @@ const Img = styled.img`
 `;
 const InfoContainer = styled.div`
   flex: 1;
-  padding: 45px;
+  padding: 50px;
 `;
 const Title = styled.h1`
   font-size: 70px;

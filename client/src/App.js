@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Cart from "./pages/Chart";
 import Home from "./pages/Home";
@@ -8,7 +9,7 @@ import Register from "./pages/Register";
 import Success from "./pages/Success";
 
 function App() {
-  const user = true;
+  const user = useSelector((state) => state.user.currentUser);
   return (
     <Routes>
       <Route path="" element={<Home />} />
